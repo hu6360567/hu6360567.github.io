@@ -5,22 +5,18 @@
     
     <title>C++之String | LvLng&#39;s Blog</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <meta name="description" content="标准库string类型和字符串字面值　　因为历史原因以及为了与C语言兼容，字符串字面值与标准库std:string类型不是同一种类型。这一点很容易引起混乱，编程时一定要注意区分字符串字面值和string数据类型的使用，这很重要。
-　　其中在和字符串字面值连接的问题上体现的最为明显
-　　string类型中’+’是一个重载了的运算符，可以连接字符串，但是需要注意的是，‘+’的使用是在string类型的">
+    <meta name="description" content="标准库string类型和字符串字面值　　因为历史原因以及为了与C语言兼容，字符串字面值与标准库std:string类型不是同一种类型。这一点很容易引起混乱，编程时一定要注意区分字符串字面值和string数据类型的使用，这很重要。 　　其中在和字符串字面值连接的问题上体现的最为明显 　　string类型中’+’是一个重载了的运算符，可以连接字符串，但是需要注意的是，‘+’的使用是在string类型的">
+<meta name="keywords" content="C++">
 <meta property="og:type" content="article">
 <meta property="og:title" content="C++之String">
 <meta property="og:url" content="http://lvlng.com/2011/06/04/cpp-string/index.html">
-<meta property="og:site_name" content="LvLng's Blog">
-<meta property="og:description" content="标准库string类型和字符串字面值　　因为历史原因以及为了与C语言兼容，字符串字面值与标准库std:string类型不是同一种类型。这一点很容易引起混乱，编程时一定要注意区分字符串字面值和string数据类型的使用，这很重要。
-　　其中在和字符串字面值连接的问题上体现的最为明显
-　　string类型中’+’是一个重载了的运算符，可以连接字符串，但是需要注意的是，‘+’的使用是在string类型的">
-<meta property="og:updated_time" content="2016-05-30T16:34:05.051Z">
+<meta property="og:site_name" content="LvLng&#39;s Blog">
+<meta property="og:description" content="标准库string类型和字符串字面值　　因为历史原因以及为了与C语言兼容，字符串字面值与标准库std:string类型不是同一种类型。这一点很容易引起混乱，编程时一定要注意区分字符串字面值和string数据类型的使用，这很重要。 　　其中在和字符串字面值连接的问题上体现的最为明显 　　string类型中’+’是一个重载了的运算符，可以连接字符串，但是需要注意的是，‘+’的使用是在string类型的">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2017-07-26T12:57:04.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="C++之String">
-<meta name="twitter:description" content="标准库string类型和字符串字面值　　因为历史原因以及为了与C语言兼容，字符串字面值与标准库std:string类型不是同一种类型。这一点很容易引起混乱，编程时一定要注意区分字符串字面值和string数据类型的使用，这很重要。
-　　其中在和字符串字面值连接的问题上体现的最为明显
-　　string类型中’+’是一个重载了的运算符，可以连接字符串，但是需要注意的是，‘+’的使用是在string类型的">
+<meta name="twitter:description" content="标准库string类型和字符串字面值　　因为历史原因以及为了与C语言兼容，字符串字面值与标准库std:string类型不是同一种类型。这一点很容易引起混乱，编程时一定要注意区分字符串字面值和string数据类型的使用，这很重要。 　　其中在和字符串字面值连接的问题上体现的最为明显 　　string类型中’+’是一个重载了的运算符，可以连接字符串，但是需要注意的是，‘+’的使用是在string类型的">
     
 
     
@@ -250,7 +246,7 @@ ga('send', 'pageview');
     <div class="article-date">
         <i class="fa fa-calendar"></i>
         <a href="/2011/06/04/cpp-string/">
-            <time datetime="2011-06-03T23:56:27.000Z" itemprop="datePublished">2011-06-04</time>
+            <time datetime="2011-06-04T02:56:27.000Z" itemprop="datePublished">2011-06-04</time>
         </a>
     </div>
 
@@ -278,7 +274,7 @@ ga('send', 'pageview');
             <h1 id="标准库string类型和字符串字面值"><a href="#标准库string类型和字符串字面值" class="headerlink" title="标准库string类型和字符串字面值"></a>标准库string类型和字符串字面值</h1><p>　　因为历史原因以及为了与C语言兼容，字符串字面值与标准库<code>std:string</code>类型不是同一种类型。这一点很容易引起混乱，编程时一定要注意区分字符串字面值和string数据类型的使用，这很重要。</p>
 <p>　　其中在和字符串字面值连接的问题上体现的最为明显</p>
 <p>　　string类型中’+’是一个重载了的运算符，可以连接字符串，但是需要注意的是，‘+’的使用是在string类型的基础之上的：</p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">string</span> s1=<span class="string">"hello"</span>;</span><br><span class="line"><span class="built_in">string</span> s2=<span class="string">"world"</span>;</span><br><span class="line"><span class="built_in">string</span> s3=s1+<span class="string">","</span>;</span><br><span class="line"><span class="comment">//正确，s1是string类型，+是string类型的重载运算符</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">string</span> s4=<span class="string">"hello"</span>+<span class="string">","</span>;</span><br><span class="line"><span class="comment">//错误，+前面是一个字符串，+并没有被重载</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">string</span> s5=s1+<span class="string">","</span>+<span class="string">"world"</span>;</span><br><span class="line"><span class="comment">//正确，第一个+是重载的运算符，s1+","</span></span><br><span class="line"><span class="comment">//仍然返回一个string类型，所以第二个+仍然是重载的运算符</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">string</span> s1=<span class="string">"hello"</span>;</div><div class="line"><span class="built_in">string</span> s2=<span class="string">"world"</span>;</div><div class="line"><span class="built_in">string</span> s3=s1+<span class="string">","</span>;</div><div class="line"><span class="comment">//正确，s1是string类型，+是string类型的重载运算符</span></div><div class="line"></div><div class="line"><span class="built_in">string</span> s4=<span class="string">"hello"</span>+<span class="string">","</span>;</div><div class="line"><span class="comment">//错误，+前面是一个字符串，+并没有被重载</span></div><div class="line"></div><div class="line"><span class="built_in">string</span> s5=s1+<span class="string">","</span>+<span class="string">"world"</span>;</div><div class="line"><span class="comment">//正确，第一个+是重载的运算符，s1+","</span></div><div class="line"><span class="comment">//仍然返回一个string类型，所以第二个+仍然是重载的运算符</span></div></pre></td></tr></table></figure>
 
         
         </div>
@@ -289,7 +285,7 @@ ga('send', 'pageview');
 
 </div>
 
-    <a data-url="http://lvlng.com/2011/06/04/cpp-string/" data-id="cj27kxsij0002sgpdua6flqfu" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+    <a data-url="http://lvlng.com/2011/06/04/cpp-string/" data-id="cj5p7ykmd0003ll23xm6eh6uf" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -407,7 +403,7 @@ ga('send', 'pageview');
                         <div class="item-inner">
                             <p class="item-category"><a class="article-category-link" href="/categories/Language/">Language</a></p>
                             <p class="item-title"><a href="/2011/06/04/cpp-string/" class="title">C++之String</a></p>
-                            <p class="item-date"><time datetime="2011-06-03T23:56:27.000Z" itemprop="datePublished">2011-06-04</time></p>
+                            <p class="item-date"><time datetime="2011-06-04T02:56:27.000Z" itemprop="datePublished">2011-06-04</time></p>
                         </div>
                     </li>
                 
@@ -426,7 +422,7 @@ ga('send', 'pageview');
                         <div class="item-inner">
                             <p class="item-category"><a class="article-category-link" href="/categories/Language/">Language</a></p>
                             <p class="item-title"><a href="/2011/03/23/cpp-extern/" class="title">C++之extern</a></p>
-                            <p class="item-date"><time datetime="2011-03-22T21:46:41.000Z" itemprop="datePublished">2011-03-23</time></p>
+                            <p class="item-date"><time datetime="2011-03-23T00:46:41.000Z" itemprop="datePublished">2011-03-23</time></p>
                         </div>
                     </li>
                 
@@ -494,7 +490,7 @@ ga('send', 'pageview');
         <footer id="footer">
     <div class="outer">
         <div id="footer-info" class="inner">
-            &copy; 2017 Wenbo Hu<br>
+            &copy; 2018 Wenbo Hu<br>
             Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>. Theme by <a href="http://github.com/ppoffice">PPOffice</a>
         </div>
     </div>

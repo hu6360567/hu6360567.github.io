@@ -7,12 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
     <meta name="description" content="Find tech Here">
 <meta property="og:type" content="website">
-<meta property="og:title" content="LvLng's Blog">
+<meta property="og:title" content="LvLng&#39;s Blog">
 <meta property="og:url" content="http://lvlng.com/index.html">
-<meta property="og:site_name" content="LvLng's Blog">
+<meta property="og:site_name" content="LvLng&#39;s Blog">
 <meta property="og:description" content="Find tech Here">
+<meta property="og:locale" content="zh-CN">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="LvLng's Blog">
+<meta name="twitter:title" content="LvLng&#39;s Blog">
 <meta name="twitter:description" content="Find tech Here">
     
 
@@ -244,7 +245,7 @@ ga('send', 'pageview');
     <div class="article-date">
         <i class="fa fa-calendar"></i>
         <a href="/2011/06/04/cpp-string/">
-            <time datetime="2011-06-03T23:56:27.000Z" itemprop="datePublished">2011-06-04</time>
+            <time datetime="2011-06-04T02:56:27.000Z" itemprop="datePublished">2011-06-04</time>
         </a>
     </div>
 
@@ -272,7 +273,7 @@ ga('send', 'pageview');
             <h1 id="标准库string类型和字符串字面值"><a href="#标准库string类型和字符串字面值" class="headerlink" title="标准库string类型和字符串字面值"></a>标准库string类型和字符串字面值</h1><p>　　因为历史原因以及为了与C语言兼容，字符串字面值与标准库<code>std:string</code>类型不是同一种类型。这一点很容易引起混乱，编程时一定要注意区分字符串字面值和string数据类型的使用，这很重要。</p>
 <p>　　其中在和字符串字面值连接的问题上体现的最为明显</p>
 <p>　　string类型中’+’是一个重载了的运算符，可以连接字符串，但是需要注意的是，‘+’的使用是在string类型的基础之上的：</p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">string</span> s1=<span class="string">"hello"</span>;</span><br><span class="line"><span class="built_in">string</span> s2=<span class="string">"world"</span>;</span><br><span class="line"><span class="built_in">string</span> s3=s1+<span class="string">","</span>;</span><br><span class="line"><span class="comment">//正确，s1是string类型，+是string类型的重载运算符</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">string</span> s4=<span class="string">"hello"</span>+<span class="string">","</span>;</span><br><span class="line"><span class="comment">//错误，+前面是一个字符串，+并没有被重载</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">string</span> s5=s1+<span class="string">","</span>+<span class="string">"world"</span>;</span><br><span class="line"><span class="comment">//正确，第一个+是重载的运算符，s1+","</span></span><br><span class="line"><span class="comment">//仍然返回一个string类型，所以第二个+仍然是重载的运算符</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">string</span> s1=<span class="string">"hello"</span>;</div><div class="line"><span class="built_in">string</span> s2=<span class="string">"world"</span>;</div><div class="line"><span class="built_in">string</span> s3=s1+<span class="string">","</span>;</div><div class="line"><span class="comment">//正确，s1是string类型，+是string类型的重载运算符</span></div><div class="line"></div><div class="line"><span class="built_in">string</span> s4=<span class="string">"hello"</span>+<span class="string">","</span>;</div><div class="line"><span class="comment">//错误，+前面是一个字符串，+并没有被重载</span></div><div class="line"></div><div class="line"><span class="built_in">string</span> s5=s1+<span class="string">","</span>+<span class="string">"world"</span>;</div><div class="line"><span class="comment">//正确，第一个+是重载的运算符，s1+","</span></div><div class="line"><span class="comment">//仍然返回一个string类型，所以第二个+仍然是重载的运算符</span></div></pre></td></tr></table></figure>
 
         
         </div>
@@ -283,7 +284,7 @@ ga('send', 'pageview');
 
 </div>
 
-    <a data-url="http://lvlng.com/2011/06/04/cpp-string/" data-id="cj27kxsij0002sgpdua6flqfu" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+    <a data-url="http://lvlng.com/2011/06/04/cpp-string/" data-id="cj5p7ykmd0003ll23xm6eh6uf" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -377,7 +378,7 @@ ga('send', 'pageview');
     <div class="article-date">
         <i class="fa fa-calendar"></i>
         <a href="/2011/03/23/cpp-extern/">
-            <time datetime="2011-03-22T21:46:41.000Z" itemprop="datePublished">2011-03-23</time>
+            <time datetime="2011-03-23T00:46:41.000Z" itemprop="datePublished">2011-03-23</time>
         </a>
     </div>
 
@@ -414,7 +415,7 @@ ga('send', 'pageview');
 
 <h2 id="通过const和头文件的描述"><a href="#通过const和头文件的描述" class="headerlink" title="通过const和头文件的描述"></a>通过const和头文件的描述</h2><p>　　我们不难发现<code>const</code>变量为什么默认不是<code>extern</code>的：在头文件中定义的const常量在每个include的源文件中都会定义一遍，但是由于<code>const</code>常量默认是不带有<code>extern</code>的，所以<code>const</code>常量是只能在本文件中存在的。另外，一般在编译过程中，编译器会将<code>const</code>常量替换成相应的字面值，所以在头文件中定义<code>const</code>常量是合理的，且一般不会造成内存使用过多。</p>
 <h2 id="在头文件中的extern"><a href="#在头文件中的extern" class="headerlink" title="在头文件中的extern"></a>在头文件中的extern</h2><p><code>extern</code>的主要目的是用于声明，头文件也是用于声明的，所以头文件中的非<code>const</code>变量必须在前面加上<code>extern</code>表明此变量是外部文件定义的。另外在相应的源文件内，定义相应的变量。</p>
-<h1 id="例子"><a href="#例子" class="headerlink" title="例子"></a>例子</h1><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//file1.h</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">extern</span> <span class="keyword">int</span> a;<span class="comment">//表示声明一个外部的int型a</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">int</span> a;<span class="comment">//错误，这是一个定义，不应出现在头文件中，若多次被include，会造成重名</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> a;<span class="comment">//正确，const默认是其他文件不可见的，只有include的源文件才可见到，并只能在此源文件中存在</span></span><br></pre></td></tr></table></figure>
+<h1 id="例子"><a href="#例子" class="headerlink" title="例子"></a>例子</h1><figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//file1.h</span></div><div class="line"></div><div class="line"><span class="keyword">extern</span> <span class="keyword">int</span> a;<span class="comment">//表示声明一个外部的int型a</span></div><div class="line"></div><div class="line"><span class="keyword">int</span> a;<span class="comment">//错误，这是一个定义，不应出现在头文件中，若多次被include，会造成重名</span></div><div class="line"></div><div class="line"><span class="keyword">const</span> <span class="keyword">int</span> a;<span class="comment">//正确，const默认是其他文件不可见的，只有include的源文件才可见到，并只能在此源文件中存在</span></div></pre></td></tr></table></figure>
 
         
         </div>
@@ -425,7 +426,7 @@ ga('send', 'pageview');
 
 </div>
 
-    <a data-url="http://lvlng.com/2011/03/23/cpp-extern/" data-id="cj27kxsi40000sgpdmchzjet3" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+    <a data-url="http://lvlng.com/2011/03/23/cpp-extern/" data-id="cj5p7ykma0001ll23ny6xhd9x" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -525,7 +526,7 @@ ga('send', 'pageview');
                         <div class="item-inner">
                             <p class="item-category"><a class="article-category-link" href="/categories/Language/">Language</a></p>
                             <p class="item-title"><a href="/2011/06/04/cpp-string/" class="title">C++之String</a></p>
-                            <p class="item-date"><time datetime="2011-06-03T23:56:27.000Z" itemprop="datePublished">2011-06-04</time></p>
+                            <p class="item-date"><time datetime="2011-06-04T02:56:27.000Z" itemprop="datePublished">2011-06-04</time></p>
                         </div>
                     </li>
                 
@@ -544,7 +545,7 @@ ga('send', 'pageview');
                         <div class="item-inner">
                             <p class="item-category"><a class="article-category-link" href="/categories/Language/">Language</a></p>
                             <p class="item-title"><a href="/2011/03/23/cpp-extern/" class="title">C++之extern</a></p>
-                            <p class="item-date"><time datetime="2011-03-22T21:46:41.000Z" itemprop="datePublished">2011-03-23</time></p>
+                            <p class="item-date"><time datetime="2011-03-23T00:46:41.000Z" itemprop="datePublished">2011-03-23</time></p>
                         </div>
                     </li>
                 
@@ -612,7 +613,7 @@ ga('send', 'pageview');
         <footer id="footer">
     <div class="outer">
         <div id="footer-info" class="inner">
-            &copy; 2017 Wenbo Hu<br>
+            &copy; 2018 Wenbo Hu<br>
             Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>. Theme by <a href="http://github.com/ppoffice">PPOffice</a>
         </div>
     </div>
